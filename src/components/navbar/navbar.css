@@ -1,0 +1,44 @@
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	background: #202020;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	z-index: 12;
+}
+
+.navlink {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 15px;
+	height: 10%;
+	cursor: pointer;
+
+	/* font stuff */
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: white;
+
+	/* box stuff */
+	border: 5px solid transparent;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: background-color 150ms linear;
+
+	&:hover {
+		background-color: #808080;
+	}
+}
+
+h1 {
+	height: 65px;
+	width: 100%;
+	z-index: 0;
+}
