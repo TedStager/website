@@ -20,7 +20,7 @@ const Navbar = () => {
 
 			</nav>
 
-			<h1> </h1>   {/* placeholder to make up for abs position */}
+			<h1 className="placeholder"> </h1> {/* placeholder to make up for abs position */}
 		</>
 	);
 };

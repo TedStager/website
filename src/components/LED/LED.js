@@ -3,7 +3,9 @@ import './LED.css';
 
 const LED = ({ colour }) => {
 	return (
-		<span className={colour} >
+		<span className="led">
+			<span className={colour} > 
+			</span>
 		</span>
 	);
 };
