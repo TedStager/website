@@ -5,6 +5,8 @@
 	width: 40px;
 	height: 40px;
 
+	margin: 5px;
+	display: flex;
 }
 
 .green {
@@ -13,6 +15,9 @@
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
+
+	margin: 5px;
+	display: flex;
 }
 
 .blue {
@@ -21,4 +26,17 @@
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
+
+	margin: 5px;
+	display: flex;
+}
+
+.clear {
+	background-color: transparent;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+
+	margin: 5px;
+	display: flex;
 }

@@ -3,8 +3,8 @@ import './LED.css';
 
 const LED = ({ colour }) => {
 	return (
-		<div className={colour} >
-		</div>
+		<span className={colour} >
+		</span>
 	);
 };
 

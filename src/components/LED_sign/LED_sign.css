@@ -1,0 +1,45 @@
+.sign {	
+	display: inline-flex;
+	flex-direction: row;
+
+	& .letter_T {
+		display: inline-flex;
+		flex-direction: column;
+
+		& .top {
+			display: inline-flex;
+			flex-direction: row;
+		}
+		
+
+		& .vertical {
+			display: inline-flex;
+			flex-direction: column;
+
+			margin-left: 100px;
+		}
+	}
+
+	& .letter_E {
+		display: inline-flex;
+		flex-direction: column;
+		margin-left: 20px;
+
+		& .bar {
+			display: inline-flex;
+			flex-direction: row;
+		}
+
+	}
+
+	& .letter_D {
+		display: inline-flex;
+		flex-direction: column;
+		margin-left: 20px;
+
+		& .across {
+			display: inline-flex;
+			flex-direction: row;
+		}
+	}
+}
