@@ -1,0 +1,7 @@
+body {
+	background-color: gray;
+
+	overflow: hidden;
+	margin: 0;
+	display: block;
+}

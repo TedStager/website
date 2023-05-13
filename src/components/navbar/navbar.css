@@ -10,8 +10,10 @@ nav {
 	height: 65px;
 	display: flex;
 	justify-content: center;
-	z-index: 12;
+	z-index: 2;
+
 }
+
 
 .navlink {
 	display: flex;
@@ -21,21 +23,22 @@ nav {
 	height: 10%;
 	cursor: pointer;
 
-	/* font stuff */
-	font-family: Arial, Helvetica;
-	font-size: 24px;
+
+	font-family: Helvetica;
+	font-size: 20px;
 	color: white;
 
-	/* box stuff */
+
 	border: 5px solid transparent;
 	border-radius: 5px;
 	background-color: transparent;
 	transition: background-color 150ms linear;
 
 	&:hover {
-		background-color: #808080;
+		background-color: rgba(80, 80, 80, 0.5);
 	}
 }
+
 
 h1 {
 	height: 65px;

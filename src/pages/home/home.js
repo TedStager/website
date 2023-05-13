@@ -5,8 +5,10 @@ import Navbar from '../../components/navbar/navbar.js'
 const Home = () => {
 	return (
 		<>
-			<Navbar shown={false} />
-			<h1> This is Ted's website! </h1>
+			<div className="home">
+				<Navbar />
+				<h1> I am Ted! </h1>
+			</div>
 		</>
 	);
 };
