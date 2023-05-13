@@ -6,7 +6,27 @@
 	& .intro {
 		font-size: 48px;
 		font-family: helvetica;
-		color: white;
+		color: #fffdef;
 		
+	}
+
+
+	& .signAndButton {
+		display: flex;
+		flex-direction: row;
+
+		& .powerButton {
+
+			visibility: hidden;
+			margin-left: 20vw;
+
+			& .powerIcon {
+
+				visibility: visible;
+
+				width: 256px;
+				height: 256px;
+			}
+		}
 	}
 }
