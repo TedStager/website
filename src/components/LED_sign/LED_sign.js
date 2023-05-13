@@ -11,8 +11,6 @@ const LED_sign = ({ colour }) => {
 					<LED colour={colour} />
 					<LED colour={colour} />
 					<LED colour={colour} />
-					<LED colour={colour} />
-					<LED colour={colour} />
 				</div>
 
 				<div className="vertical">
