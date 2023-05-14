@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import './home.css';
 import Navbar from '../../components/navbar/navbar.js';
 import LED_sign from '../../components/LED_sign/LED_sign.js';
@@ -12,6 +13,18 @@ const Home = () => {
 	useEffect(() => {
 		setLedStatus(true);
 	}, []);
+
+	const descriptors = [
+		" Mechatronics Engineer", 1200,
+		" Firmware Developer", 1000,
+		" Piano Player", 750,
+		" Mechanical Engineer", 800,
+		"n Embedded Engineer", 1000,
+		" Skier", 750,
+		" Web Developer", 1000,
+		"n Amateur Cook", 800
+	];
+
 
 	return (
 		<>
@@ -28,6 +41,15 @@ const Home = () => {
 					<button onClick={() => setLedStatus(!ledStatus)} className="powerButton" >
 						<img src={power} className="powerIcon" />
 					</button>
+				</div>
+
+				<div className="description">
+					I am a 
+					<TypeAnimation 
+					 sequence={descriptors}
+					 wrapper="span"
+					 cursor="true"
+					 repeat={Infinity} />
 				</div>
 			
 			</div>
