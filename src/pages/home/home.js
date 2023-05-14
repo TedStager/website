@@ -16,10 +16,9 @@ const Home = () => {
 
 	const descriptors = [
 		" Mechatronics Engineer", 2000,
-		" Firmware Developer", 1000,
+		" Software Developer", 1000,
 		" Piano Player", 750,
 		" Mechanical Designer", 800,
-		"n Embedded Engineer", 1000,
 		" Skier", 750,
 		" Web Developer", 1000,
 		"n Amateur Cook", 800,
