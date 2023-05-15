@@ -1,0 +1,39 @@
+.wordcloud {
+	position: absolute;
+	top: 5vh;
+	right: 10vw;
+
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& .tagcloud {
+		display: inline-block;
+		top: 0;
+		left: 0;
+		font-family: helvetica;
+		font-weight: 600;
+		letter-spacing: 0.0625em;
+		font-size: 1.3em;
+	}
+}
+
+.tagcloud--item {
+	color: #fffdef;
+	transition: all 250ms linear;
+
+	/* prevent text selection	*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.tagcloud--item:hover {
+	color: #9db3ed;
+}

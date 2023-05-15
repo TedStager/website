@@ -39,7 +39,7 @@ const Home = () => {
 					<LED_sign colour={ ledStatus ? "white" : "off" } />
 
 					<button onClick={() => setLedStatus(!ledStatus)} className="powerButton" >
-						<img src={power} className="powerIcon" />
+						<img src={power} className="powerIcon" draggable="false" />
 					</button>
 				</div>
 

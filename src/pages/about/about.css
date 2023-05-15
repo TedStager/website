@@ -1,8 +1,22 @@
-body {
-
-} 
-
 .about {
 	width: 100%;
 	height: 100%;
+
+	padding-left: 5vw;
+
+
+	& .aboutHeader {
+		font-size: 48px;
+		font-family: helvetica;
+		color: #fffdef;
+	}
+
+	& .aboutDescription {
+		font-size: 14px;
+		font-family: helvetica;
+		color: #fffdef;
+
+		width: 30vw;
+		line-height: 1.5;
+	}
 }
