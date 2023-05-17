@@ -1,48 +1,37 @@
 import React, { useEffect } from 'react';
-import TagCloud from 'TagCloud';
+import { TagCloud } from '@frank-mayer/react-tag-cloud';
 import './wordcloud.css';
 
 const Wordcloud = () => {
+	return (
+		<div className="wordcloud">	
+			<TagCloud options={(w: Window & typeof globalThis): TagCloudOptions => ({
+	            	  radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
+	                 maxSpeed: "fast", })}
 
-	useEffect(() => {
-		return () => {
-			const container = ".tagcloud";
-
-			const tags = [
+					  className="TagCloud"
+			>
+			{[
+				"SolidWorks",
+				"FEA",
+				"AutoCAD",
+				"Git",
+				"Unix",
+				"EAGLE",
 				"C++",
 				"C",
 				"Python",
-				"Java",
 				"MATLAB",
 				"Perl",
+				"Java",
 				"JavaScript",
 				"HTML/CSS",
 				"Microcontrollers",
 				"Arduino",
 				"ICs",
-				"Hardware Design",
-				"SolidWorks",
-				"FEA",
-				"AutoCAD",
-				"EAGLE",
-				"Git",
-				"Unix"
-			];
-
-			const options = {
-				radius: 300,
-				maxSpeed: "normal",
-				initSpeed: "normal",
-				keep: true,
-			};
-
-			TagCloud(container, tags, options);
-		}
-	}, [] );
-
-	return (
-		<div className="wordcloud">
-			<span className="tagcloud"> </span>
+				"Hardware Design"
+			]}
+			</TagCloud>
 		</div>
 	);
 }
