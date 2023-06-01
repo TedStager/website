@@ -29,7 +29,9 @@ const Wordcloud = () => {
 				"Microcontrollers",
 				"Arduino",
 				"ICs",
-				"Hardware Design"
+				"Hardware Design",
+				"PHP",
+				"Drupal"
 			]}
 			</TagCloud>
 		</div>
