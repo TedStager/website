@@ -1,8 +1,53 @@
-.comingSoon {
-	font-size: 48px;
-	font-family: helvetica;
-	color: #fffdef;
+.projPortfolio {
 
-	margin-top: 10%;
-	text-align: center;
+	& .portfolioHeader {
+		color: #FFFDEF;
+		font-family: helvetica;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	& .projectList {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 80%;
+
+		border: 3px solid blue;
+
+
+		& .projectTile {
+
+			border: 3px solid red;
+			width: 20em;
+			height: 15em;
+
+			text-decoration: none;
+
+			& .projectTileContents {
+				& .projectImage {
+					width: 100%;
+					aspect-ratio: 4/3;
+					background-color: grey;
+				}
+
+				& .projectText {
+
+					border: 3px solid green;
+
+					width: 100%;
+					aspect-ratio: 4/3;
+					z-index: 2;
+
+					color: #FFFDEF;
+					font-family: helvetica;
+					text-align: center;
+
+					& .projectSub {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
 }
