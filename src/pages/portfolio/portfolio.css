@@ -1,5 +1,9 @@
 .projPortfolio {
 
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
 	& .portfolioHeader {
 		color: #FFFDEF;
 		font-family: helvetica;
@@ -25,6 +29,7 @@
 			text-decoration: none;
 
 			& .projectTileContents {
+
 				& .projectImage {
 					width: 100%;
 					aspect-ratio: 4/3;
@@ -33,11 +38,12 @@
 
 				& .projectText {
 
-					border: 3px solid green;
-
 					width: 100%;
 					aspect-ratio: 4/3;
 					z-index: 2;
+
+					position: relative;
+					bottom: 15em;
 
 					color: #FFFDEF;
 					font-family: helvetica;

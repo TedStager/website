@@ -17,7 +17,7 @@ const Portfolio = () => {
 						projects.map((project) => (
 							<a
 							href={project.link}
-							key={project.image}
+							// key={project.image}
 							className="projectTile">
 								<div className="projectTileContents">
 									<img
