@@ -6,9 +6,9 @@
 	position: absolute;
 	top: 65px;
 	width: 100%;
-	overflow: scroll;
+	height: calc(100vh - 65px);
 
-	border: 3px solid green;
+	overflow: scroll;
 
 	& .portfolioHeader {
 		color: #FFFDEF;
@@ -22,18 +22,19 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		width: 80%;
-
-		border: 3px solid blue;
+		width: 70%;
 
 		& .projectRow {
 
 			display: flex;
 			flex-direction: row;
+			justify-content: space-around;
+			width: 100%;
+
+			padding-bottom: 3em;
 
 			& .projectTile {
 
-				border: 3px solid red;
 				width: 20em;
 				height: 15em;
 
@@ -41,13 +42,21 @@
 
 				& .projectTileContents {
 
+					width: 20em;
+					height: 15em;
+
 					& .projectImage {
 						width: 100%;
 						aspect-ratio: 4/3;
 						background-color: grey;
+
+						border-radius: 5px;
+						border: 3px solid black;
 					}
 
 					& .projectText {
+
+						visibility: hidden;
 
 						width: 100%;
 						aspect-ratio: 4/3;
@@ -63,6 +72,25 @@
 						& .projectSub {
 							font-size: 24px;
 						}
+
+						& .projectTitle {
+							font-size: 36px;
+						}
+
+						& .projectDesc {
+							font-size: 12px;
+						}
+					}
+				}
+
+				&:hover {
+
+					& .projectImage {
+						border: 3px solid blue;
+					}
+
+					& .projectText {
+						visibility: visible;
 					}
 				}
 			}

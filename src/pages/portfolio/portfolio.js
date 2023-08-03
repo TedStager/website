@@ -42,12 +42,14 @@ const Portfolio = () => {
 		const overflow = projects.length % NUM_IN_ROW;
 
 		// first get all the full rows
+		var counter = 0;
 		for (let i = 0; i < fullRows; i++) {
 			var row = [];
 			
 			for (let j = 0; j < NUM_IN_ROW; j++) {
-				var projectIndex = j + j*i;
-				row[j] = getProjectHtml(projects[projectIndex]);
+				var projectIndex = i + j*i;
+				row[j] = getProjectHtml(projects[counter]);
+				counter++;
 			}
 
 			projList[i] = row;
