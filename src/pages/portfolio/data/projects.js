@@ -15,6 +15,14 @@ export const projects = [
 		description: "Made a Connect-4 player in C++ using a variant of a min-max algorithm.",
 		image: "./apple.png",
 		image_desc: "An orange",
+		link: "/about",
+	},
+	{
+		title: "Virtual Enigma Machine",
+		subtitle: "Python, tkinter GUI Library",
+		description: "Designed and programmed a fully functional digital recreation of the Enigma Machine",
+		image: "./apple.png",
+		image_desc: "A banana",
 		link: "/",
 	},
 

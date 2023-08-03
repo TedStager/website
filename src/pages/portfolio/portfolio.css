@@ -3,6 +3,12 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	position: absolute;
+	top: 65px;
+	width: 100%;
+	overflow: scroll;
+
+	border: 3px solid green;
 
 	& .portfolioHeader {
 		color: #FFFDEF;
@@ -13,44 +19,50 @@
 
 	& .projectList {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
 		width: 80%;
 
 		border: 3px solid blue;
 
+		& .projectRow {
 
-		& .projectTile {
+			display: flex;
+			flex-direction: row;
 
-			border: 3px solid red;
-			width: 20em;
-			height: 15em;
+			& .projectTile {
 
-			text-decoration: none;
+				border: 3px solid red;
+				width: 20em;
+				height: 15em;
 
-			& .projectTileContents {
+				text-decoration: none;
 
-				& .projectImage {
-					width: 100%;
-					aspect-ratio: 4/3;
-					background-color: grey;
-				}
+				& .projectTileContents {
 
-				& .projectText {
+					& .projectImage {
+						width: 100%;
+						aspect-ratio: 4/3;
+						background-color: grey;
+					}
 
-					width: 100%;
-					aspect-ratio: 4/3;
-					z-index: 2;
+					& .projectText {
 
-					position: relative;
-					bottom: 15em;
+						width: 100%;
+						aspect-ratio: 4/3;
+						z-index: 2;
 
-					color: #FFFDEF;
-					font-family: helvetica;
-					text-align: center;
+						position: relative;
+						bottom: 15em;
 
-					& .projectSub {
-						font-size: 24px;
+						color: #FFFDEF;
+						font-family: helvetica;
+						text-align: center;
+
+						& .projectSub {
+							font-size: 24px;
+						}
 					}
 				}
 			}
