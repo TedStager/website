@@ -22,13 +22,13 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		width: 70%;
+		width: 80%;
 
 		& .projectRow {
 
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
+			justify-content: center;
 			width: 100%;
 
 			padding-bottom: 3em;
@@ -37,33 +37,45 @@
 
 				width: 20em;
 				height: 15em;
+				padding: 10px;
 
 				text-decoration: none;
 
 				& .projectTileContents {
 
-					width: 20em;
-					height: 15em;
+					width: 100%;
+					aspect-ratio: 4/3;
+
+					display: grid;
 
 					& .projectImage {
 						width: 100%;
 						aspect-ratio: 4/3;
 						background-color: grey;
 
-						border-radius: 5px;
+						border-radius: 15px;
 						border: 3px solid black;
+
+						grid-column: 1;
+						grid-row: 1;
 					}
 
 					& .projectText {
 
-						visibility: hidden;
+						background-color: rgba(0, 0, 0, 0.7);
+						border: 3px solid black;
+
+						opacity: 0;
+						transition: opacity 150ms linear;
 
 						width: 100%;
 						aspect-ratio: 4/3;
-						z-index: 2;
+						z-index: 3;
 
-						position: relative;
-						bottom: 15em;
+						grid-column: 1;
+						grid-row: 1;
+
+						border-radius: 15px;
 
 						color: #FFFDEF;
 						font-family: helvetica;
@@ -85,13 +97,11 @@
 
 				&:hover {
 
-					& .projectImage {
-						border: 3px solid blue;
-					}
 
 					& .projectText {
-						visibility: visible;
+						opacity: 1;
 					}
+
 				}
 			}
 		}

@@ -1,17 +1,19 @@
 import React from 'react';
 import Navbar from '../../components/navbar/navbar.js';
 import './portfolio.css';
-import { projects } from './data/projects.js';
+import { projects } from './projects.js';
 
 const Portfolio = () => {
 
-	const NUM_IN_ROW = 2;
+	const NUM_IN_ROW = 3;
 
 	function getProjectHtml(project) {
 		return (
 			<a
 			href={project.link}
 			key={project.image}
+			target="_blank"
+			rel="noreferrer noopener"
 			className="projectTile">
 				<div className="projectTileContents">
 					<img
