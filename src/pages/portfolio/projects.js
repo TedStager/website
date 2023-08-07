@@ -5,7 +5,7 @@ export const projects = [
 		title: "Arduino Pong Game",
 		subtitle: "Arduino, SPI, C++",
 		description: "Made a recreation of the classic arcade game Pong on an Arduino using an SPI display.",
-		image: "./data/apple.png",
+		image: "./data/portfolio/pong.jpg",
 		image_desc: "An apple",
 		link: "https://github.com/TedStager/Arduino-Pong",
 	},
