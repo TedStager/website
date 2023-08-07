@@ -15,14 +15,13 @@ const Home = () => {
 	}, []);
 
 	const descriptors = [
-		" Mechatronics Engineer", 2000,
+		" Mechatronics Engineering Student", 2000,
 		" Software Developer", 1000,
-		" Piano Player", 750,
 		" Mechanical Designer", 800,
-		" Skier", 750,
 		" Web Developer", 1000,
+		" Hardware Designer", 1000,
+		" Piano Player", 750,
 		"n Amateur Cook", 800,
-		" Hardware Designer", 1000
 	];
 
 
