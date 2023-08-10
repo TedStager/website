@@ -1,0 +1,16 @@
+.skillsBlock {
+	text-align: center;
+
+	& .skill {
+		margin: 5px;
+		padding: 5px;
+		border-radius: 5px;
+
+		background-color: transparent;
+		transition: background 150ms linear;
+
+		&:hover {
+			background-color: rgba(85, 90, 192, 0.8);
+		}
+	}
+}
