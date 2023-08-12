@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home.js';
 import About from './pages/about/about.js';
 import Portfolio from './pages/portfolio/portfolio.js'
-import SteppedTone from './pages/portfolio/project_pages/stepped_tone.js'
+import SteppedTone from './pages/portfolio/project_pages/stepped_tone_page/stepped_tone.js'
 import './App.css';
 
 function App() {
