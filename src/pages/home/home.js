@@ -35,10 +35,18 @@ const Home = () => {
 				</h1>
 
 				<div className="signAndButton">
-					<LED_sign colour={ ledStatus ? "white" : "off" } />
 
-					<button onClick={() => setLedStatus(!ledStatus)} className="powerButton" >
-						<img src={power} className="powerIcon" draggable="false" />
+					<span className="ledSign">
+						<LED_sign colour={ ledStatus ? "white" : "off" } />
+					</span>
+
+					<button onClick={() => setLedStatus(!ledStatus)} 
+							className="powerButton" >
+
+						<img src={power} 
+							 className="powerIcon" 
+							 draggable="false" />
+							 
 					</button>
 				</div>
 

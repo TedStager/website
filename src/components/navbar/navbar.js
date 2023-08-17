@@ -19,8 +19,6 @@ const Navbar = () => {
 				</Link>
 
 			</nav>
-
-			<h1 className="placeholder"> </h1> {/* placeholder to make up for abs position */}
 		</>
 	);
 };

@@ -1,75 +1,49 @@
-.red {
-	background-color: #f00;
-	box-shadow: 0 0 50px #f00;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+.red, .green, .blue, .white, .off, .clear {
+	--led-width: 40px;
 
-	margin: 5px;
+	border-radius: 50%;
+	width: var(--led-width);
+	height: var(--led-width);
+
+	margin: calc(var(--led-width) / 8);
 	display: flex;
 
 	transition: all 1s linear;
+
+	@media only screen and (max-width: 500px) {
+		--led-width: calc(8vw);
+	}
+
+	@media only screen and (min-height: 661px) {
+		--led-width: calc(0.14 * (60vh - 65px));
+	}
+}
+
+.red {
+	background-color: #f00;
+	box-shadow: 0 0 50px #f00;
+	
 }
 
 .green {
 	background-color: #0f0;
 	box-shadow: 0 0 50px #0f0;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-
-	margin: 5px;
-	display: flex;
-
-	transition: all 1s linear;
 }
 
 .blue {
 	background-color: #00f;
 	box-shadow: 0 0 50px #00f;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-
-	margin: 5px;
-	display: flex;
-
-	transition: all 1s linear;
 }
 
 .white {
 	background-color: #fffded;
 	box-shadow: 0 0 50px 3px #fffded;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-
-	margin: 5px;
-	display: flex;
-
-	transition: all 1s linear;
 }
 
 .off {
 	background-color: #30334b;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-
-	margin: 5px;
-	display: flex;
-
-	transition: all 1s linear;
 }
 
 .clear {
 	background-color: transparent;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-
-	margin: 5px;
-	display: flex;
-
-	transition: all 1s linear;
 }

@@ -1,4 +1,9 @@
 .sign {	
+	--sign-width: 500px;
+
+	width: var(--sign-width);
+	height: calc(var(--sign-width) / 2);
+
 	display: inline-flex;
 	flex-direction: row;
 
@@ -16,14 +21,14 @@
 			display: inline-flex;
 			flex-direction: column;
 
-			margin-left: 50px;
+			margin-left: calc(var(--sign-width) * 0.1);
 		}
 	}
 
 	& .letter_E {
 		display: inline-flex;
 		flex-direction: column;
-		margin-left: 20px;
+		margin-left: calc(var(--sign-width) * 0.04);
 
 		& .bar {
 			display: inline-flex;
@@ -35,11 +40,19 @@
 	& .letter_D {
 		display: inline-flex;
 		flex-direction: column;
-		margin-left: 20px;
+		margin-left: calc(var(--sign-width) * 0.04);
 
 		& .across {
 			display: inline-flex;
 			flex-direction: row;
 		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		--sign-width: 100vw;
+	}
+
+	@media only screen and (min-height: 661px) {
+		--sign-width: calc(2 * (60vh - 65px));
 	}
 }
