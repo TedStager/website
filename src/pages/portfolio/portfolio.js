@@ -1,4 +1,6 @@
 import React from 'react';
+import { useRef } from 'react';
+
 import Navbar from '../../components/navbar/navbar.js';
 import './portfolio.css';
 import { projects } from './projects.js';
@@ -6,6 +8,9 @@ import { projects } from './projects.js';
 const Portfolio = () => {
 
 	const NUM_IN_ROW = 3;
+
+	// const windowDims = useRef([window.innerWidth, window.innerHeight]);
+	// alert(windowDims.current[0]);
 
 	function getProjectHtml(project) {
 		return (

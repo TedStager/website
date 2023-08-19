@@ -8,6 +8,8 @@
 	width: 100%;
 	height: calc(100vh - 65px);
 
+	--view-width: 100vw;
+
 	overflow: scroll;
 
 	& .portfolioHeader {
