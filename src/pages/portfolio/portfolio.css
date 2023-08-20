@@ -31,12 +31,12 @@
 			justify-content: center;
 			width: 100%;
 
-			padding-bottom: 3em;
+			padding-bottom: 3rem;
 
 			& .projectTile {
 
-				width: 20em;
-				height: 15em;
+				width: 20rem;
+				height: 15rem;
 				padding: 10px;
 
 				text-decoration: none;

@@ -1,12 +1,42 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+
 import Navbar from '../../components/navbar/navbar.js';
 import './portfolio.css';
 import { projects } from './projects.js';
 
 const Portfolio = () => {
 
-	const NUM_IN_ROW = 3;
+	
+	// all of this is to get the number in the row to be dynamic
+	const [numInRow, setNumInRow] = useState(3);
 
+	const [dims, setDims] = useState({
+		height: window.innerHeight,
+		width: window.innerWidth,
+	});
+
+	useEffect(() => {
+		window.addEventListener('resize', () => {
+			setTimeout(() => {
+				setDims({
+					height: window.innerHeight,
+					width: window.innerWidth,
+				});
+
+				// logic for num in row
+				if (dims.width < 920)
+					setNumInRow(1);
+				else if (dims.width < 1250)
+					setNumInRow(2);
+				else
+					setNumInRow(3);
+
+				console.log(dims.width);
+			});
+		});
+	});
+	
 	function getProjectHtml(project) {
 		return (
 			<a
@@ -40,15 +70,15 @@ const Portfolio = () => {
 
 	function getProjectList(projects) {
 		const projList = [];
-		const fullRows = Math.floor(projects.length / NUM_IN_ROW);
-		const overflow = projects.length % NUM_IN_ROW;
+		const fullRows = Math.floor(projects.length / numInRow);
+		const overflow = projects.length % numInRow;
 
 		// first get all the full rows
 		var counter = 0;
 		for (let i = 0; i < fullRows; i++) {
 			var row = [];
 			
-			for (let j = 0; j < NUM_IN_ROW; j++) {
+			for (let j = 0; j < numInRow; j++) {
 				var projectIndex = i + j*i;
 				row[j] = getProjectHtml(projects[counter]);
 				counter++;
@@ -61,7 +91,7 @@ const Portfolio = () => {
 		if (overflow) {
 			row = [];
 			for (let i = 0; i < overflow; i++) {
-				var projectIndex = fullRows*NUM_IN_ROW + i;
+				var projectIndex = fullRows*numInRow + i;
 				row[i] = getProjectHtml(projects[projectIndex]);
 			}
 
