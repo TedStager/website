@@ -2,11 +2,19 @@
 
 export const projects = [
 	{
+		title: "Cloud Inventory Manager",
+		subtitle: "MERN Stack, Material UI",
+		description: "Created a cloud based inventory management system for store owners.",
+		image: "./data/portfolio/inv-manager.png",
+		image_desc: "Screenshot of store page",
+		link: "https://github.com/TedStager/inventory-manager",
+	},
+	{
 		title: "Arduino Pong Game",
 		subtitle: "Arduino, SPI, C++",
 		description: "Made a recreation of the classic arcade game Pong on an Arduino using an SPI display.",
 		image: "./data/portfolio/pong.jpg",
-		image_desc: "An apple",
+		image_desc: "Photo of setup",
 		link: "https://github.com/TedStager/Arduino-Pong",
 	},
 	{
